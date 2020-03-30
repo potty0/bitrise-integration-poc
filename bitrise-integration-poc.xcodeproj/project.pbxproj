@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		0FC9412C24323E1E00A5D055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9412B24323E1E00A5D055 /* AppDelegate.swift */; };
 		0FC9412E24323E1E00A5D055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9412D24323E1E00A5D055 /* SceneDelegate.swift */; };
-		0FC9413024323E1E00A5D055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9412F24323E1E00A5D055 /* ViewController.swift */; };
 		0FC9413324323E1E00A5D055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC9413124323E1E00A5D055 /* Main.storyboard */; };
 		0FC9413524323E1F00A5D055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC9413424323E1F00A5D055 /* Assets.xcassets */; };
 		0FC9413824323E1F00A5D055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC9413624323E1F00A5D055 /* LaunchScreen.storyboard */; };
 		0FC9414324323E1F00A5D055 /* bitrise_integration_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9414224323E1F00A5D055 /* bitrise_integration_pocTests.swift */; };
 		0FC9414E24323E1F00A5D055 /* bitrise_integration_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9414D24323E1F00A5D055 /* bitrise_integration_pocUITests.swift */; };
+		0FC9415C24323FD400A5D055 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9415B24323FD400A5D055 /* TestViewController.swift */; };
+		0FC9415D24323FD400A5D055 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9415B24323FD400A5D055 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		0FC9412824323E1E00A5D055 /* bitrise-integration-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bitrise-integration-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC9412B24323E1E00A5D055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FC9412D24323E1E00A5D055 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0FC9412F24323E1E00A5D055 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FC9413224323E1E00A5D055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FC9413424323E1F00A5D055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FC9413724323E1F00A5D055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,7 @@
 		0FC9414924323E1F00A5D055 /* bitrise-integration-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bitrise-integration-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC9414D24323E1F00A5D055 /* bitrise_integration_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitrise_integration_pocUITests.swift; sourceTree = "<group>"; };
 		0FC9414F24323E1F00A5D055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FC9415B24323FD400A5D055 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +102,7 @@
 			children = (
 				0FC9412B24323E1E00A5D055 /* AppDelegate.swift */,
 				0FC9412D24323E1E00A5D055 /* SceneDelegate.swift */,
-				0FC9412F24323E1E00A5D055 /* ViewController.swift */,
+				0FC9415B24323FD400A5D055 /* TestViewController.swift */,
 				0FC9413124323E1E00A5D055 /* Main.storyboard */,
 				0FC9413424323E1F00A5D055 /* Assets.xcassets */,
 				0FC9413624323E1F00A5D055 /* LaunchScreen.storyboard */,
@@ -259,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FC9413024323E1E00A5D055 /* ViewController.swift in Sources */,
 				0FC9412C24323E1E00A5D055 /* AppDelegate.swift in Sources */,
+				0FC9415C24323FD400A5D055 /* TestViewController.swift in Sources */,
 				0FC9412E24323E1E00A5D055 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC9415D24323FD400A5D055 /* TestViewController.swift in Sources */,
 				0FC9414E24323E1F00A5D055 /* bitrise_integration_pocUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
