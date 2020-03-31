@@ -23,21 +23,26 @@ class bitrise_integration_pocUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testFirstDeveloperSelectionWithButtonPress() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCUIApplication().tabBars.buttons["Second"].tap()
+        
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Mobile developer #1"]/*[[".cells[\"Mobile developer #1, iOS expert\"].staticTexts[\"Mobile developer #1\"]",".staticTexts[\"Mobile developer #1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Press me!"].tap()
+        
+        let title = XCUIApplication()/*@START_MENU_TOKEN@*/.staticTexts["infoLabel"]/*[[".staticTexts[\"Button not pressed yet!\"]",".staticTexts[\"infoLabel\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.label
+        XCTAssert(title == "Pressed!", "Failed to detect pressed state.")
     }
 
-    func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+//    func testLaunchPerformance() {
+//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+//            // This measures how long it takes to launch your application.
+//            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+//                XCUIApplication().launch()
+//            }
+//        }
+//    }
 }
